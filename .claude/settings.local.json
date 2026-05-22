@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__plugin_context-matic_context-matic__fetch_api",
+      "mcp__plugin_context-matic_context-matic__ask",
+      "Bash(D:\\\\Danish\\\\Work\\\\Projects\\\\APIMatic\\\\project\\\\venv\\\\Scripts\\\\pip.exe list *)",
+      "Bash(findstr /I \"fastapi paypal twilio google calendar slack pydantic pytest dotenv uvicorn requests\")",
+      "PowerShell(.\\\\venv\\\\Scripts\\\\pip.exe list)",
+      "PowerShell(& \"D:\\\\Danish\\\\Work\\\\Projects\\\\APIMatic\\\\project\\\\venv\\\\Scripts\\\\pip.exe\" list 2>&1)",
+      "PowerShell(& \"D:\\\\Danish\\\\Work\\\\Projects\\\\APIMatic\\\\project\\\\venv\\\\Scripts\\\\python.exe\" -m pip install -r D:\\\\Danish\\\\Work\\\\Projects\\\\APIMatic\\\\project\\\\requirements.txt 2>&1 | Select-Object -Last 30)",
+      "mcp__plugin_context-matic_context-matic__endpoint_search",
+      "mcp__plugin_context-matic_context-matic__update_activity",
+      "PowerShell(& \"D:\\\\Danish\\\\Work\\\\Projects\\\\APIMatic\\\\project\\\\venv\\\\Scripts\\\\python.exe\" -c \"import billable.app, billable.bootstrap_auth, billable.services.calendar_service, billable.services.paypal_service, billable.services.slack_service, billable.services.sms_service; print\\('OK'\\)\" 2>&1)",
+      "PowerShell(& \"D:\\\\Danish\\\\Work\\\\Projects\\\\APIMatic\\\\project\\\\venv\\\\Scripts\\\\python.exe\" -m pytest D:\\\\Danish\\\\Work\\\\Projects\\\\APIMatic\\\\project\\\\tests -v 2>&1 | Select-Object -Last 60)",
+      "PowerShell(& \"D:\\\\Danish\\\\Work\\\\Projects\\\\APIMatic\\\\project\\\\venv\\\\Scripts\\\\python.exe\" -m pytest D:\\\\Danish\\\\Work\\\\Projects\\\\APIMatic\\\\project\\\\tests -v 2>&1 | Select-Object -Last 80)",
+      "PowerShell(& \"D:\\\\Danish\\\\Work\\\\Projects\\\\APIMatic\\\\project\\\\venv\\\\Scripts\\\\python.exe\" -m pytest D:\\\\Danish\\\\Work\\\\Projects\\\\APIMatic\\\\project\\\\tests\\\\test_sms_service.py -v 2>&1 | Select-Object -Last 20)",
+      "PowerShell(& \"D:\\\\Danish\\\\Work\\\\Projects\\\\APIMatic\\\\project\\\\venv\\\\Scripts\\\\python.exe\" -m pytest D:\\\\Danish\\\\Work\\\\Projects\\\\APIMatic\\\\project\\\\tests\\\\test_sms_service.py -v 2>&1 | Select-Object -Last 15)",
+      "PowerShell(& \"D:\\\\Danish\\\\Work\\\\Projects\\\\APIMatic\\\\project\\\\venv\\\\Scripts\\\\python.exe\" -c \"from billable.config import get_settings; s = get_settings\\(\\); print\\('from:', repr\\(s.twilio_from_number\\)\\); print\\('test:', repr\\(s.twilio_test_number\\)\\); print\\('same:', s.twilio_from_number == s.twilio_test_number\\)\")",
+      "PowerShell(& \"D:\\\\Danish\\\\Work\\\\Projects\\\\APIMatic\\\\project\\\\venv\\\\Scripts\\\\python.exe\" -m pytest D:\\\\Danish\\\\Work\\\\Projects\\\\APIMatic\\\\project\\\\tests -v 2>&1 | Select-Object -Last 35)",
+      "PowerShell(& \"D:\\\\Danish\\\\Work\\\\Projects\\\\APIMatic\\\\project\\\\venv\\\\Scripts\\\\python.exe\" -m pip install streamlit 2>&1 | Select-Object -Last 5)",
+      "PowerShell(& \"D:\\\\Danish\\\\Work\\\\Projects\\\\APIMatic\\\\project\\\\venv\\\\Scripts\\\\python.exe\" -c \"import ast; ast.parse\\(open\\('D:/Danish/Work/Projects/APIMatic/project/streamlit_app.py'\\).read\\(\\)\\); print\\('OK'\\)\")"
+    ]
+  },
+  "enabledPlugins": {
+    "context-matic@apimatic": true
+  }
+}
